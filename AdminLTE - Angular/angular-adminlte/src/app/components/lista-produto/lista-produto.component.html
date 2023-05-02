@@ -1,0 +1,17 @@
+<div>
+    <h2 style="margin-top: 10; ">Produtos cadastrados</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Quantidade</th>
+            <th>Tipo</th>
+        </tr>
+        <tr *ngFor="let item of listaProduto">
+            <td>{{item.codigo}}</td>
+            <td>{{item.descricao}}</td>
+            <td>{{item.quantidade}}</td>
+            <td>{{item.categoria}}</td>
+        </tr>
+    </table>
+</div>
